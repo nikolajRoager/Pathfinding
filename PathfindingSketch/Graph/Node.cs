@@ -12,9 +12,13 @@ public class Node
     
     /// <summary>
     /// The street number of this address, a number from 1 to whatever on each road
-    /// Should always be odd, the node is automatically home to even numbered addresses on the other side of the road
+    /// This variable should always be odd, the node is automatically home to even numbered addresses on the other side of the road
     /// </summary>
-    public int StreetNr { get; private set; }
+    public int StreetNr { get; set; }
+    /// <summary>
+    /// What street are we on, must be a singular street, even if this node has multiple neighbours
+    /// </summary>
+    public string Street { get; set; }
     
     
     /// <summary>
@@ -27,7 +31,7 @@ public class Node
     public double Y { get; private set; }
     
     public Dictionary<Node, Connection> Neighbours { get; private set; }
-
+    
 
     public Node(int id, double x, double y)
     {
@@ -37,5 +41,9 @@ public class Node
         
         //Will be set by the connections when added
         Neighbours = new Dictionary<Node, Connection>();
+
+        //Indicates that street number has not been set, it will be set externally when the streets are added
+        StreetNr = 0;
+        Street = "null";
     }
 }

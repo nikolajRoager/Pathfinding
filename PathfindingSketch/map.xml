@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<map>
+    <nodes>
+        <!--Abyvej-->
+        <node x="1031" y="981" id="0"/>
+        <node x="978" y="871" id="1"/>
+        <node x="933" y="724" id="2"/>
+        <node x="902" y="598" id="3"/>
+        <node x="925" y="351" id="4"/>
+        <node x="1027" y="270" id="5"/>
+        <node x="1171" y="265" id="6"/>
+        <node x="1324" y="209" id="7"/>
+        
+        <!--byhusvej-->
+        <node x="26" y="607" id="8"/>
+        <node x="381" y="608" id="9"/>
+        <node x="550" y="598" id="10"/>
+        
+        <!--Svinget-->
+        <node x="503" y="407" id="11"/>
+        <node x="623" y="344" id="12"/>
+        <node x="788" y="346" id="13"/>
+        
+        <!--Bagmarksvej-->
+        <node x="1054" y="100" id="14"/>
+        <node x="1315" y="49" id="15"/>
+    </nodes>
+    <connections>
+        <connection road="true" rail="false" pedestrianPath="false" bicylcePath="false" from="0" to="1" name="Abyvej"/>
+        <connection road="true" rail="false" pedestrianPath="false" bicylcePath="false" from="1" to="2" name="Abyvej"/>
+        <connection road="true" rail="false" pedestrianPath="false" bicylcePath="false" from="2" to="3" name="Abyvej"/>
+        <connection road="true" rail="false" pedestrianPath="false" bicylcePath="false" from="3" to="4" name="Abyvej"/>
+        <connection road="true" rail="false" pedestrianPath="false" bicylcePath="false" from="4" to="5" name="Abyvej"/>
+        <connection road="true" rail="false" pedestrianPath="false" bicylcePath="false" from="5" to="6" name="Abyvej"/>
+        <connection road="true" rail="false" pedestrianPath="false" bicylcePath="false" from="6" to="7" name="Abyvej"/>
+
+        
+        <connection road="true" rail="false" pedestrianPath="false" bicylcePath="false" from="8" to="9"  name="Byhusvej"/>
+        <connection road="true" rail="false" pedestrianPath="false" bicylcePath="false" from="9" to="10" name="Byhusvej"/>
+        <connection road="true" rail="false" pedestrianPath="false" bicylcePath="false" from="10" to="3" name="Byhusvej"/>
+
+
+        <connection road="true" rail="false" pedestrianPath="false" bicylcePath="false" from="9" to="11"  name="Svinget"/>
+        <connection road="true" rail="false" pedestrianPath="false" bicylcePath="false" from="11" to="12" name="Svinget"/>
+        <connection road="true" rail="false" pedestrianPath="false" bicylcePath="false" from="12" to="13" name="Svinget"/>
+        <connection road="true" rail="false" pedestrianPath="false" bicylcePath="false" from="13" to="4"  name="Svinget"/>
+
+
+        <connection road="true" rail="false" pedestrianPath="false" bicylcePath="false" from="5" to="14"  name="Bagmarksvej"/>
+        <connection road="true" rail="false" pedestrianPath="false" bicylcePath="false" from="14" to="15" name="Bagmarksvej"/>
+    </connections>
+</map>

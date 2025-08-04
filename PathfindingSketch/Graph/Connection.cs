@@ -7,10 +7,12 @@ public class Connection
     public bool PedestrianPath { get; private set; }
     public bool BicyclePath{ get; private set; }
     
+    public string Name { get; private set; }
+    
     public Node From { get; private set; }
     public Node To { get; private set; }
 
-    public Connection(bool road, bool rail, bool pedestrianPath, bool bicyclePath, Node from, Node to)
+    public Connection(bool road, bool rail, bool pedestrianPath, bool bicyclePath, Node from, Node to, string name)
     {
         Road = road;
         Rail = rail;
@@ -18,6 +20,7 @@ public class Connection
         BicyclePath = bicyclePath;
         From = from;
         To = to;
+        Name = name;
         
         From.Neighbours.Add(To, this);
         To.Neighbours.Add(From, this);
