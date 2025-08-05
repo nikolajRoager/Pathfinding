@@ -7,6 +7,17 @@ public class Connection
     public bool PedestrianPath { get; private set; }
     public bool BicyclePath{ get; private set; }
     
+    public enum Type
+    {
+        Byvej,
+        Landevej,
+        Motorvej
+    }
+    
+    /// <summary>
+    /// Only applies to the road, what type of road is this, effects speed limit
+    /// </summary>
+    public Type RoadType { get; private set; }
     public string Name { get; private set; }
     
     public Node From { get; private set; }
